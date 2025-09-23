@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaFileAlt, FaGithub, FaLinkedin } from "react-icons/fa";
 
 interface FooterProps {
   darkMode: boolean;
@@ -26,28 +26,42 @@ const Footer: React.FC<FooterProps> = ({ darkMode }) => {
         {/* Links sociales */}
         <div className="flex gap-4 text-xl">
           <a
-            // href="https://linkedin.com/in/tu-usuario"
+            href="" // 👉 reemplaza con tu link real
             target="_blank"
             rel="noopener noreferrer"
-            className={`hover:scale-110 transition-transform ${
-              darkMode
-                ? "text-gray-300 hover:text-white"
-                : "text-gray-700 hover:text-blue-600"
-            }`}
-          >
-            <FaLinkedin />
-          </a>
-          <a
-            href="https://github.com/kevinsoto13"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`hover:scale-110 transition-transform ${
+            className={`transition-transform hover:scale-110 ${
               darkMode
                 ? "text-gray-300 hover:text-white"
                 : "text-gray-700 hover:text-black"
             }`}
           >
-            <FaGithub />
+            <FaLinkedin size={22} />
+          </a>
+
+          {/* GitHub */}
+          <a
+            href="https://github.com/kevinsoto13"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`transition-transform hover:scale-110 ${
+              darkMode ? "text-gray-300" : "text-gray-800"
+            }`}
+          >
+            <FaGithub size={22} />
+          </a>
+
+          {/* CV */}
+          <a
+            href="https://www.doyoubuzz.com/kevin-soto-orta"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`transition-transform hover:scale-110 ${
+              darkMode
+                ? "text-gray-300 hover:text-white"
+                : "text-gray-700 hover:text-black"
+            }`}
+          >
+            <FaFileAlt size={22} />
           </a>
         </div>
       </div>

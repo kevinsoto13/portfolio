@@ -1,6 +1,6 @@
 import React from "react";
 import { Moon, Sun } from "lucide-react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaFileAlt } from "react-icons/fa";
 
 interface HeaderProps {
   darkMode: boolean;
@@ -48,7 +48,7 @@ const Header: React.FC<HeaderProps> = ({ darkMode, setDarkMode }) => {
         <div className="flex items-center gap-4">
           {/* LinkedIn */}
           <a
-            // href="https://www.linkedin.com/in/tu-usuario" // 👉 reemplaza con tu link real
+            href="" // 👉 reemplaza con tu link real
             target="_blank"
             rel="noopener noreferrer"
             className={`transition-transform hover:scale-110 ${
@@ -60,7 +60,7 @@ const Header: React.FC<HeaderProps> = ({ darkMode, setDarkMode }) => {
 
           {/* GitHub */}
           <a
-            href="https://github.com/kevinsoto13" // 👉 reemplaza con tu link real
+            href="https://github.com/kevinsoto13"
             target="_blank"
             rel="noopener noreferrer"
             className={`transition-transform hover:scale-110 ${
@@ -68,6 +68,18 @@ const Header: React.FC<HeaderProps> = ({ darkMode, setDarkMode }) => {
             }`}
           >
             <FaGithub size={22} />
+          </a>
+
+          {/* CV */}
+          <a
+            href="https://www.doyoubuzz.com/kevin-soto-orta"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`transition-transform hover:scale-110 ${
+              darkMode ? "text-gray-300 hover:text-white" : "text-gray-700 hover:text-black"
+            }`}
+          >
+            <FaFileAlt size={22} />
           </a>
 
           {/* Botón Dark Mode */}
