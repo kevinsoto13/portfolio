@@ -26,7 +26,7 @@ const Footer: React.FC<FooterProps> = ({ darkMode }) => {
         {/* Links sociales */}
         <div className="flex gap-4 text-xl">
           <a
-            href="" // 👉 reemplaza con tu link real
+            // href="" // 👉 reemplaza con tu link real
             target="_blank"
             rel="noopener noreferrer"
             className={`transition-transform hover:scale-110 ${
