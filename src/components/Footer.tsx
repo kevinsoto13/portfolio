@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFileAlt, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 interface FooterProps {
   darkMode: boolean;
