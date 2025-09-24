@@ -48,7 +48,7 @@ const Header: React.FC<HeaderProps> = ({ darkMode, setDarkMode }) => {
         <div className="flex items-center gap-4">
           {/* LinkedIn */}
           <a
-            // href="" // 👉 reemplaza con tu link real
+            href="www.linkedin.com/in/kevin-soto-9b6712136" // 👉 reemplaza con tu link real
             target="_blank"
             rel="noopener noreferrer"
             className={`transition-transform hover:scale-110 ${
@@ -71,7 +71,7 @@ const Header: React.FC<HeaderProps> = ({ darkMode, setDarkMode }) => {
           </a>
 
           {/* CV */}
-          <a
+          {/* <a
             href="https://www.doyoubuzz.com/kevin-soto-orta"
             target="_blank"
             rel="noopener noreferrer"
@@ -80,7 +80,7 @@ const Header: React.FC<HeaderProps> = ({ darkMode, setDarkMode }) => {
             }`}
           >
             <FaFileAlt size={22} />
-          </a>
+          </a> */}
 
           {/* Botón Dark Mode */}
           <button

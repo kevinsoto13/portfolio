@@ -26,7 +26,7 @@ const Footer: React.FC<FooterProps> = ({ darkMode }) => {
         {/* Links sociales */}
         <div className="flex gap-4 text-xl">
           <a
-            // href="" // 👉 reemplaza con tu link real
+            href="www.linkedin.com/in/kevin-soto-9b6712136" // 👉 reemplaza con tu link real
             target="_blank"
             rel="noopener noreferrer"
             className={`transition-transform hover:scale-110 ${
@@ -51,7 +51,7 @@ const Footer: React.FC<FooterProps> = ({ darkMode }) => {
           </a>
 
           {/* CV */}
-          <a
+          {/* <a
             href="https://www.doyoubuzz.com/kevin-soto-orta"
             target="_blank"
             rel="noopener noreferrer"
@@ -62,7 +62,7 @@ const Footer: React.FC<FooterProps> = ({ darkMode }) => {
             }`}
           >
             <FaFileAlt size={22} />
-          </a>
+          </a> */}
         </div>
       </div>
     </footer>
