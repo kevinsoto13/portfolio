@@ -48,7 +48,7 @@ const Header: React.FC<HeaderProps> = ({ darkMode, setDarkMode }) => {
         <div className="flex items-center gap-4">
           {/* LinkedIn */}
           <a
-            href="www.linkedin.com/in/kevin-soto-9b6712136" // 👉 reemplaza con tu link real
+            href="https://www.linkedin.com/in/kevin-soto-9b6712136" // 👉 reemplaza con tu link real
             target="_blank"
             rel="noopener noreferrer"
             className={`transition-transform hover:scale-110 ${
