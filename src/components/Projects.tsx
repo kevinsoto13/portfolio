@@ -17,8 +17,8 @@ const Projects: React.FC<ProjectsProps> = ({ darkMode }) => {
     {
       title: "Product Manager",
       description:
-        "Full-stack CRUD app with PERN stack. Features AI-powered chat connected via n8n. API tested with Supertest and documented with Swagger.",
-      tech: ["PostgreSQL", "Express", "React", "Node.js", "n8n"],
+         "Full-stack CRUD app built with the PERN stack, featuring an AI-powered chat connected via n8n. The API is tested with Supertest and documented with Swagger. Frontend end-to-end tests implemented using Playwright.",
+      tech: ["PostgreSQL", "Express", "React", "Node.js", "Playwright", "n8n"],
       link: "https://rest-apis-typescript-frontend-eta-eight.vercel.app",
       image: "product-manager.jpg",
     },
