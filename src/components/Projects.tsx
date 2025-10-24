@@ -17,10 +17,18 @@ const Projects: React.FC<ProjectsProps> = ({ darkMode }) => {
     {
       title: "Product Manager",
       description:
-         "Full-stack CRUD app built with the PERN stack, featuring an AI-powered chat connected via n8n. The API is tested with Supertest and documented with Swagger. Frontend end-to-end tests implemented using Playwright.",
+        "Full-stack CRUD app built with the PERN stack, featuring an AI-powered chat connected via n8n. The API is tested with Supertest and documented with Swagger. Frontend end-to-end tests implemented using Playwright.",
       tech: ["PostgreSQL", "Express", "React", "Node.js", "Playwright", "n8n"],
       link: "https://rest-apis-typescript-frontend-eta-eight.vercel.app",
       image: "product-manager.jpg",
+    },
+    {
+      title: "SportKS",
+      description:
+        "Android mobile app built with React Native that displays live sports matches and scores through API integration. Features user authentication system. Currently available only for Android. Credentials required for testing.",
+      tech: ["React Native", "TypeScript", "API Integration", "Authentication"],
+      link: "https://expo.dev/accounts/sotoorta93/projects/app-react-native/builds/d5deb393-b67a-4f10-bfb1-056310d6a1c6",
+      image: "sports-app.jpg",
     },
     {
       title: "React E-commerce",
@@ -56,7 +64,7 @@ const Projects: React.FC<ProjectsProps> = ({ darkMode }) => {
     {
       title: "Veterinary Patients Manager",
       description: "React CRUD app for managing veterinary patients.",
-      tech: ["React", "JavaScript","HTML", "CSS"],
+      tech: ["React", "JavaScript", "HTML", "CSS"],
       link: "https://dazzling-crostata-5098eb.netlify.app",
       image: "veterinary.jpg",
     },
@@ -66,13 +74,6 @@ const Projects: React.FC<ProjectsProps> = ({ darkMode }) => {
       tech: ["React", "JavaScript", "HTML", "CSS"],
       link: "https://soft-crisp-402ff0.netlify.app",
       image: "guitarla.jpg",
-    },
-    {
-      title: "Rock & EDM Festival",
-      description: "Landing page with SEO-focused web development.",
-      tech: ["HTML", "CSS", "SEO"],
-      link: "https://euphonious-taiyaki-b75d7e.netlify.app",
-      image: "festival.jpg",
     },
   ];
 
@@ -93,11 +94,11 @@ const Projects: React.FC<ProjectsProps> = ({ darkMode }) => {
               } overflow-hidden`} // 👈 importante
             >
               {/* Imagen preview */}
-              <div className="w-full  p-4">
+              <div className="w-full h-56 overflow-hidden p-4">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover mb-4"
+                  className="w-full h-full object-cover rounded-lg"
                 />
               </div>
 
