@@ -9,8 +9,8 @@ const Projects: React.FC<ProjectsProps> = ({ darkMode }) => {
     {
       title: "Quipana",
       description:
-        "Enterprise-ready platform built with Vue 4, PrimeVue, TypeScript, Tailwind and Bootstrap. Dashboards, tables, forms, and reports for multiple clients.",
-      tech: ["Vue 4", "PrimeVue", "TypeScript", "Tailwind", "Bootstrap"],
+        "Enterprise-ready platform built with Vue, PrimeVue 4, TypeScript, Tailwind and Bootstrap. Dashboards, tables, forms, and reports for multiple clients.",
+      tech: ["Vue", "PrimeVue 4", "TypeScript", "Tailwind", "Bootstrap"],
       link: "https://quipana.com",
       image: "quipana.jpg",
     },
